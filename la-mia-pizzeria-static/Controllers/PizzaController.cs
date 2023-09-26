@@ -8,6 +8,7 @@ namespace la_mia_pizzeria_static.Controllers
 {
     public class PizzaController : Controller
     {
+        //[Route("Home/")]
         public IActionResult Index()
         {
             // Generate a list of fake pizzas
