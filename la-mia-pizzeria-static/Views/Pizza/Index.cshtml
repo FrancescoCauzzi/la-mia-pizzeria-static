@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Our Pizzas";
+}
+
+<div class="text-center d-flex justify-content-center flex-column gap-4 ">
+    <h1 class="display-4">These are our pizzas</h1>
+    @model List<la_mia_pizzeria_static.Models.Pizza>
+
+    @foreach (var pizza in Model)
+    {
+        <h1>@pizza.Name</h1>
+        <img src="https://via.placeholder.com/150?text=Pizza" alt="Pizza Image">
+
+        <p>Description: @pizza.Description</p>
+        <p>Price: @pizza.Price</p>
+        <hr />
+    }
+</div>
